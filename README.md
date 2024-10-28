@@ -15,4 +15,10 @@ función factorial(n):
     sino:
         devolver n * factorial(n - 1)  // Llamada recursiva
 
+def mostrar_descendente(n):
+    if n < 1:  # Caso base
+        return
+    print(n)  # Mostrar el número
+    mostrar_descendente(n - 1)  # Llamada recursiva
 
+mostrar_descendente(5)
