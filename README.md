@@ -1,12 +1,11 @@
 # recursividad
-La recursividad en programación es una técnica en la que una función se llama a sí misma para resolver un problema. Este enfoque se utiliza para descomponer un problema complejo en subproblemas más simples y manejables. 
 
-Una función recursiva generalmente tiene dos componentes:
+La recursividad en programación es una técnica donde una función se llama a sí misma para resolver un problema. Tiene dos partes clave:
 
-1. **Caso base**: Es una condición que detiene la recursión. Sin este caso, la función continuaría llamándose a sí misma indefinidamente, lo que resultaría en un error de desbordamiento de pila.
+    Caso base: Condición que detiene la recursión.
+    Llamada recursiva: Parte donde la función se llama con un argumento modificado.
 
-2. **Llamada recursiva**: Es la parte donde la función se llama a sí misma con un argumento modificado, acercándose al caso base.
-
+Un ejemplo común es el cálculo del factorial de un número. Es útil para descomponer problemas complejos, aunque puede ser menos eficiente que métodos iterativos.
 Un ejemplo clásico de recursividad es el cálculo del factorial de un número. Aquí tienes un ejemplo en pseudocódigo:
 
 ```plaintext
@@ -15,6 +14,5 @@ función factorial(n):
         devolver 1  // Caso base
     sino:
         devolver n * factorial(n - 1)  // Llamada recursiva
-```
 
-La recursividad puede ser muy elegante y fácil de entender, pero es importante usarla adecuadamente, ya que puede consumir más memoria y tiempo de ejecución en comparación con enfoques iterativos.
+
